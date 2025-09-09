@@ -13,10 +13,10 @@ public class Main {
     Main m = new Main();
 
     // Run first example
-    // m.runExampleOne();
-    // m.runExampleTwo();
-    // m.runExampleThree();
-    // m.runExampleFour();
+    m.runExampleOne();
+    m.runExampleTwo();
+    m.runExampleThree();
+    m.runExampleFour();
     m.runExampleFive();
   }
 
@@ -33,6 +33,7 @@ public class Main {
     System.out.println(title);
 
     // Declare variables
+    byte randomByteValue = 23;
     int randomIntValue = 1912;
     // When declare a float value, we must add f behind the value.
     float randomFloatValue = 231.422f;
@@ -41,6 +42,7 @@ public class Main {
     char c = 't';
 
     // We can use printf to format output string like this
+    System.out.printf("Random byte value: %d\n", randomByteValue);
     System.out.printf("Random integer value: %d\n", randomIntValue);
     System.out.printf("Random float value: %f\n", randomFloatValue);
     System.out.printf("Is randomIntValue equal to 1912? %b\n", isEqual);
@@ -68,8 +70,6 @@ public class Main {
     System.out.println("==============================");
   }
 
-  ;
-
   /**
    * Run example `Complex variables` of variables lesson
    */
@@ -88,8 +88,6 @@ public class Main {
 
     System.out.println("==============================");
   }
-
-  ;
 
   /**
    * Run example `List` of variables lesson
@@ -129,7 +127,7 @@ public class Main {
     }
 
     System.out.println("==============================");
-  };
+  }
 
   /**
    * Run example `Size of variables` of variables lesson
@@ -138,13 +136,6 @@ public class Main {
     System.out.println("Run example 5 - Size of variables");
     System.out.println("==============================");
 
-    short shortValue = 23;
-    int intValue = 23;
-    long longValue = 23;
-    float floatValue = 23.2f;
-    double doubleValue = 23.2f;
-    char charValue = 't';
-    String strValue = "Hello world";
     Person p = new Person("Lan", "Nguyen Van", (short) 23, "FullStack Engineer");
     String[] lines = {
         "Hello world!",
@@ -163,13 +154,6 @@ public class Main {
     System.out.printf("\tSize of double: %d bytes.\n", Double.BYTES);
 
     System.out.println("Size of objects:");
-    System.out.printf("\tSize of shortValue: %d bytes\n", ClassLayout.parseInstance(shortValue).instanceSize());
-    System.out.printf("\tSize of intValue: %d bytes\n", ClassLayout.parseInstance(intValue).instanceSize());
-    System.out.printf("\tSize of longValue: %d bytes\n", ClassLayout.parseInstance(longValue).instanceSize());
-    System.out.printf("\tSize of floatValue: %d bytes\n", ClassLayout.parseInstance(floatValue).instanceSize());
-    System.out.printf("\tSize of doubleValue: %d bytes\n", ClassLayout.parseInstance(doubleValue).instanceSize());
-    System.out.printf("\tSize of charValue: %d bytes\n", ClassLayout.parseInstance(charValue).instanceSize());
-    System.out.printf("\tSize of strValue: %d bytes\n", ClassLayout.parseInstance(strValue).instanceSize());
     System.out.printf("\tSize of p: %d bytes\n", ClassLayout.parseInstance(p).instanceSize());
     System.out.printf("\tSize of lines: %d bytes\n", ClassLayout.parseInstance(lines).instanceSize());
     System.out.printf("\tSize of lines2: %d bytes\n", ClassLayout.parseInstance(lines2).instanceSize());
