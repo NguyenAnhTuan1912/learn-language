@@ -1,0 +1,10 @@
+.lesson {
+  margin-bottom: 1.5rem;
+}
+
+code {
+  padding: 0.15rem 0.4rem;
+  border-radius: 6px;
+  background-color: #ededed;
+  color: red;
+}
