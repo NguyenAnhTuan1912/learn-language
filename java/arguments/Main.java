@@ -1,4 +1,5 @@
 class ConsumeArguments {
+
   public static void main(String[] args) {
     System.out.println("Receive these arguments");
     for (String arg : args) {
@@ -6,4 +7,5 @@ class ConsumeArguments {
       System.out.println(arg);
     }
   }
+
 }
